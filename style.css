@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth; /* ✅ smooth scrolling */
+}
+
+/* Header */
+.header {
+  background: #1a1a2e;
+  padding: 0.8rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* ✅ align logo and nav links */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #00adb5;
+}
+
+/* Ensure sections aren't hidden by sticky header */
+section {
+  scroll-margin-top: 80px; /* ✅ offset equal to header height */
+}
+
+/* Hero */
+.hero-section {
+  background: linear-gradient(to right, #1a1a2e, #16213e);
+  color: #fff;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.hero-section h1 {
+  font-size: 2.5rem;
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background: #00adb5;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.cta-button:hover {
+  background: #008b91;
+}
+
+/* Products */
+.products-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.products-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.product-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+}
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.product-card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+/* Order History */
+.order-history-section {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+.order-history-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.order-history-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.order-history-section th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+.status {
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.85rem;
+}
+.status.shipped { background: #3498db; }
+.status.processing { background: #f1c40f; }
+.status.delivered { background: #2ecc71; }
+.status.cancelled { background: #e74c3c; }
+
+/* Chatbot */
+.chatbot-widget {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 320px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.chatbot-widget.hidden {
+  display: none;
+}
+.chat-header {
+  background: #1a1a2e;
+  color: #fff;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chat-body {
+  padding: 1rem;
+  height: 250px;
+  overflow-y: auto;
+}
+.chat-message {
+  margin-bottom: 1rem;
+}
+.chat-message.bot p {
+  background: #eaeaea;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+.chat-input {
+  display: flex;
+  padding: 0.8rem;
+  border-top: 1px solid #ddd;
+}
+.chat-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.chat-input button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #00adb5;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Chatbot Toggle */
+.chatbot-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00adb5;
+  border: none;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+.footer {
+  background: #16213e;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.footer a {
+  color: #00adb5;
+  text-decoration: none;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simplify - Sales Management Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <a href="#hero" class="logo">Simplify</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#order-history">Order History</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero-section">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Simplify Your Sales Management</h1>
+        <p>Track orders, manage products, and interact with buyers directly from one powerful dashboard.</p>
+        <a href="#" id="start-selling" class="cta-button">Start Selling Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products-section">
+    <div class="container">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="Wireless Headphones">
+          <h3>Wireless Headphones</h3>
+          <p>Premium sound and comfort for all-day productivity.</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="Smart Coffee Mug">
+          <h3>Smart Coffee Mug</h3>
+          <p>Keep your coffee at the perfect temperature anytime.</p>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="Office Chair">
+          <h3>Ergonomic Office Chair</h3>
+          <p>Ultimate comfort for long working hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order History -->
+  <section id="order-history" class="order-history-section">
+    <div class="container">
+      <h2>Recent Order History</h2>
+      <div class="dashboard-container">
+        <table id="order-table">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Date</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>#A1B23</td><td>Premium Wireless Headphones</td><td>5</td><td>2025-09-04</td><td><span class="status shipped">Shipped</span></td></tr>
+            <tr><td>#C4D56</td><td>Smart Coffee Mug</td><td>12</td><td>2025-09-03</td><td><span class="status processing">Processing</span></td></tr>
+            <tr><td>#E7F89</td><td>Ergonomic Office Chair</td><td>2</td><td>2025-09-03</td><td><span class="status delivered">Delivered</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chatbot -->
+  <div class="chatbot-widget hidden">
+    <div class="chat-header">
+      <span>Sales Assistant</span>
+      <button class="close-chat">&times;</button>
+    </div>
+    <div class="chat-body" id="chat-body">
+      <div class="chat-message bot">
+        <p>Hello! How can I help you today? Try typing "Order 20 units of Product A".</p>
+      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type your message...">
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+  <button class="chatbot-toggle">
+    💬
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="company-details">
+          <h3>Simplify</h3>
+          <p>Your one-stop solution for sales management.</p>
+          <p>&copy; 2025 Simplify Inc. All rights reserved.</p>
+        </div>
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
+        </div>
+        <div class="contact-info">
+          <p>Email: <a href="mailto:contact@simplify.com">contact@simplify.com</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
